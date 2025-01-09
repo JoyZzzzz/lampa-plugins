@@ -1392,10 +1392,10 @@ Lampa.SettingsApi.addComponent({
 					},
 					onChange: function(value) {
 						if (value == '1') {
-						       itemON('https://bylampa.github.io/rus_movie.js', 'Русские Новинки', '@bylampa', 'rus_movie');
+						       itemON('https://joyzzzzz.github.io/lampa-plugins/rus_movie.js', 'Русские Новинки', '@bylampa', 'rus_movie');
 						}
 						if (value == '2') {
-							var pluginToRemoveUrl = "https://bylampa.github.io/rus_movie.js";
+							var pluginToRemoveUrl = "https://joyzzzzz.github.io/lampa-plugins/rus_movie.js";
 							deletePlugin(pluginToRemoveUrl);
 						}
 					},
@@ -1409,13 +1409,13 @@ Lampa.SettingsApi.addComponent({
 								$('div[data-name="Weather"]').find('.settings-param__status').removeClass('active error wait').addClass('error')
 							}
 						}, 100);*/
-						var myResult = checkPlugin('https://bylampa.github.io/rus_movie.js');
+						var myResult = checkPlugin('https://joyzzzzz.github.io/lampa-plugins/rus_movie.js');
                                                 var pluginsArray = Lampa.Storage.get('plugins');
                                                     setTimeout(function() {
                                                        $('div[data-name="rus_movie"]').append('<div class="settings-param__status one"></div>');
                                                        var pluginStatus = null;
                                                        for (var i = 0; i < pluginsArray.length; i++) {
-                                                          if (pluginsArray[i].url === 'https://bylampa.github.io/rus_movie.js') {
+                                                          if (pluginsArray[i].url === 'https://joyzzzzz.github.io/lampa-plugins/rus_movie.js') {
                                                              pluginStatus = pluginsArray[i].status;
                                                              break;
                                                           }
